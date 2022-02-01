@@ -1,0 +1,460 @@
+@charset "UTF-8";
+* {
+    /*margin: 0;
+    box-sizing: border-box;*/
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", "Verdana", sans-serif;
+    color: #000;
+    background-color: #fafafa;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQYlWP4TwR48OT/f4ZRhdRR+OAJhEEIAwBJ3IoylGLdUQAAAABJRU5ErkJggg==) repeat;
+    /*background-color: #d0d0d0;
+    /* background: green; */
+}
+body p {
+    font-size: 16px;
+    /* background: orange; */
+}
+body code {
+    color: #90c;
+}
+.purple {
+    color: #90c;
+}
+.black {
+    color: #000;
+}
+body h1 {
+    font-size: 2em;
+    /*font-family og color: header&footer har font-family: "courier", serif; og color: #000;*/
+    text-align: center;
+}
+body h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+body h2 {
+    font-size: 1.5em;
+    color: #90c;
+    /* background: pink; */
+}
+body h3 {
+    font-size: 1.2em;
+    /* background: indigo; */
+}
+body img {
+    max-width: 100%;
+}
+table {
+    margin: 0;
+    width: 100%;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+table td, table th {
+    font-size: 0.6em;
+    font-weight: 100;
+    border: 1px solid #000;
+    text-align: center;
+    padding: 2px 0;
+}
+table tr:nth-child(even) {
+    background: #eee;
+}
+.container {
+    margin:           0 0;
+    /*background-color: #e5e5e5;
+    background-color: #eee;    
+    /*background:       blue;*/
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+header, footer {
+    /*color: #872aff;*/
+    margin: 0;
+    color: #000;
+    font-family: "courier", serif;
+    background-color: #fff;
+    clear: both;
+    /* background: brown; */
+    /*background:   url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQYlWP4TwR48OT/f4ZRhdRR+OAJhEEIAwBJ3IoylGLdUQAAAABJRU5ErkJggg==) repeat;*/
+}
+.headerbg, .footerbg {
+    margin: 0;
+    padding: 3px 18% 0 18%;
+    background-color: #fff;
+    border-bottom: 10px solid #90c;
+    /*___________________________________________________________________________________________________*/
+}
+.headerbg {
+    /*-webkit-box-shadow: 0px 3px 13px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 13px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 13px -6px rgba(0,0,0,0.75);*/
+}
+
+.content {
+    margin: 0;
+    /*background-color: #e4f4a3;
+    background-color: #f6f6f6;*/
+    /* background: lightgreen; */
+}
+.section {
+    margin: 20px 0;
+    padding: 1px 4%;
+    background: #fff;
+    /* background: yellow; */
+    
+    -webkit-box-shadow: 0px 3px 13px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow:    0px 3px 13px -6px rgba(0,0,0,0.75);
+    box-shadow:         0px 3px 13px -6px rgba(0,0,0,0.75);
+    
+}
+/*Alternativ look for secitonlist:*/
+.sectionlist {
+    margin: 20px 0 0 0;
+    padding: 1px 0;
+    position: static;
+    width: 100%;
+    background-color: #fff;
+    -webkit-box-shadow: none;
+    -moz-box-shadow:    none;
+    box-shadow:         none;
+    -webkit-box-shadow: 0px 3px 13px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow:    0px 3px 13px -6px rgba(0,0,0,0.75);
+    box-shadow:         0px 3px 13px -6px rgba(0,0,0,0.75);  
+}
+.sectionlist h2 {
+    margin-left: 10%;
+}
+.sectionlist ul {
+    list-style: none;
+    counter-reset: hash;
+    padding: 0;
+}
+.sectionlist li {
+    padding: 0;
+}
+.sectionlist li:nth-child(even) {
+    background-color: #eee;
+}
+.sectionlist li a {
+    padding: 0 15%;
+    display: block;
+    text-decoration: none;
+}
+.sectionlist li a:link, .sectionlist li a:visited {
+    color: #000;
+}
+.sectionlist li a:hover, .sectionlist li a:focus {
+    color: #fff;
+    background-color: #90c;
+}
+.sectionlist h2 a {
+    color: #90c;
+    display: block;
+    text-decoration: none;
+}
+/*.sectionlist a:before {
+    counter-increment: hash;
+    content: "#" (hash);
+}*/
+/*Alternativ look for sectionlist: Knapper ved siden av hverandre med skygge*/
+/*.sectionlist {
+    margin: 0 0 0 2%;
+    padding: 1px 2%;
+    position: fixed;
+    width: 15%;
+    border-radius: 10px;
+    background-color: #fafafa;
+    
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow:    none;
+    box-shadow:         none;
+    -webkit-box-shadow: 0px 3px 13px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow:    0px 3px 13px -6px rgba(0,0,0,0.75);
+    box-shadow:         0px 3px 13px -6px rgba(0,0,0,0.75);
+    
+}
+.sectionlist ul {
+    list-style: none;
+    padding: 0;
+}
+.sectionlist li {
+    margin: 2px;
+    display: inline-block;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow:    0px 3px 5px 0px rgba(0,0,0,0.3);
+    box-shadow:         0px 3px 5px 0px rgba(0,0,0,0.3);
+}
+.sectionlist a {
+    padding: 1px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+.sectionlist a:link, .sectionlist a:visited {
+    color: #90c;
+    background: #fff;
+}
+.sectionlist a:hover, .sectionlist a:focus {
+    color: #fff;
+    background: #90c;
+}
+.sectionlist h2, section.sectionlist a {
+}*/
+/*sectionlist-stiler slutt*/
+.div {
+    background: grey;
+}
+.relative {
+    padding-bottom: 20px;
+    position: relative;
+    background: rgba(42, 240, 0, 0.3);
+}
+.static {
+    padding-bottom: 20px;
+    position: static;
+    background: rgba(255, 0, 0, 0.3);
+}
+.absolute {
+    padding-bottom: 20px;
+    position: absolute;
+    background: rgba(255, 120, 0, 0.3);
+}
+.fixed {
+    padding-bottom: 20px;
+    position: fixed;
+    background: rgba(50, 40, 255, 0.3);
+}
+.floatleft {
+    margin: 2px 2%;
+    float: left;
+}
+.floatright {
+    float: right;
+}
+.w150px {
+    width: 150px;
+}
+.box {
+    margin: 1px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-color: #90c;
+}
+.box:nth-child(13n - 1) {
+    clear: left;
+    background-color: #222;
+}
+.clearfix {
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+/*=====================================================
+__________________-TABLET-____________________________
+=======================================================*/
+
+
+
+@media only screen and (min-width: 768px) {
+
+body h1 {
+}
+
+table {
+    margin: 0;
+    width: 80%;
+}
+
+.container {
+        margin: 0 5%;
+    }
+
+header, footer {
+    /*color: #872aff;*/
+    
+    /* background: brown; */
+    /*background:   url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQYlWP4TwR48OT/f4ZRhdRR+OAJhEEIAwBJ3IoylGLdUQAAAABJRU5ErkJggg==) repeat;*/
+}
+
+.headerbg, .footerbg {
+    padding: 16px 5% 0 5%;
+    /*___________________________________________________________________________________________________*/
+}    
+/*    
+.section {
+    margin: 20px 1% 20px 34%;
+    padding: inherit 2%;
+    border-radius: 10px;
+}
+*/
+    /*Alternativ look for secitonlist:*/
+/*.sectionlist {
+    margin: 0 0 0 1%;
+    padding: 1px 0;
+    position: fixed;
+    float: left;
+    width: 28%;
+    border-radius: 10px; 
+}
+*/
+.sectionlist h2 {
+    margin-left: 10%;
+}
+    
+/*.sectionlist a:before {
+    counter-increment: hash;
+    content: "#" (hash);
+}*/
+/*Alternativ look for sectionlist: Knapper ved siden av hverandre med skygge*/
+/*.sectionlist {
+    margin: 0 0 0 2%;
+    padding: 1px 2%;
+    position: fixed;
+    width: 15%;
+    border-radius: 10px;
+    background-color: #fafafa;
+    
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow:    none;
+    box-shadow:         none;
+    -webkit-box-shadow: 0px 3px 13px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow:    0px 3px 13px -6px rgba(0,0,0,0.75);
+    box-shadow:         0px 3px 13px -6px rgba(0,0,0,0.75);
+    
+}
+.sectionlist ul {
+    list-style: none;
+    padding: 0;
+}
+.sectionlist li {
+    margin: 2px;
+    display: inline-block;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow:    0px 3px 5px 0px rgba(0,0,0,0.3);
+    box-shadow:         0px 3px 5px 0px rgba(0,0,0,0.3);
+}
+.sectionlist a {
+    padding: 1px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+.sectionlist a:link, .sectionlist a:visited {
+    color: #90c;
+    background: #fff;
+}
+.sectionlist a:hover, .sectionlist a:focus {
+    color: #fff;
+    background: #90c;
+}
+.sectionlist h2, section.sectionlist a {
+}*/
+/*sectionlist-stiler slutt*/
+
+
+
+}
+
+
+
+
+
+
+
+/*=====================================================
+__________________-DESKTOP-____________________________
+=======================================================*/
+
+
+
+
+@media only screen and (min-width: 992px) {
+body h1 {
+    font-size: 3em;
+}
+table td, table th {
+    font-size: 1em;
+}
+    /*Alternativ look for secitonlist:*/
+/*
+.section {
+    margin: 20px 2% 20px 36%;
+    padding: inherit 2%;
+}
+*/
+/*
+.sectionlist {
+    margin: 0 0 0 2%;
+    padding: 1px 0;
+    position: fixed;
+    float: left;
+    width: 28%;
+    border-radius: 10px; 
+}
+*/
+/*Alternativ look for sectionlist: Knapper ved siden av hverandre med skygge*/
+/*.sectionlist {
+    border-radius: 10px;
+    background-color: #fafafa;
+    
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow:    none;
+    box-shadow:         none;
+    -webkit-box-shadow: 0px 3px 13px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow:    0px 3px 13px -6px rgba(0,0,0,0.75);
+    box-shadow:         0px 3px 13px -6px rgba(0,0,0,0.75);
+    
+}
+.sectionlist ul {
+    list-style: none;
+    padding: 0;
+}
+.sectionlist li {
+    margin: 2px;
+    display: inline-block;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow:    0px 3px 5px 0px rgba(0,0,0,0.3);
+    box-shadow:         0px 3px 5px 0px rgba(0,0,0,0.3);
+}
+.sectionlist a {
+    padding: 1px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+.sectionlist a:link, .sectionlist a:visited {
+    color: #90c;
+    background: #fff;
+}
+.sectionlist a:hover, .sectionlist a:focus {
+    color: #fff;
+    background: #90c;
+}
+.sectionlist h2, section.sectionlist a {
+}
+*/
+
+
+
+}
+
+
+
+
+
+
+
+
